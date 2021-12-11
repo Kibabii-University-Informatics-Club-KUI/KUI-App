@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textViewPostTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="KUI Coding Night"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewPostDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Using wrap_content like I was using above will cause all child Views to be measured which will cause further CPU time. This measurement will cause your getView(...) to be called. I've now tested this and the number of times getView(...) is called is reduced dramatically."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewPostTitle"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPostTitle" />
+
+        <TextView
+            android:id="@+id/textViewPostOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="By Joel Kanyi"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/textViewPostDescription"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPostDescription" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

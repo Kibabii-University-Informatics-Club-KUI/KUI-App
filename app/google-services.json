@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "650689937568",
+    "project_id": "kui-app-40716",
+    "storage_bucket": "kui-app-40716.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650689937568:android:87bb1d63b8886cdce549c5",
+        "android_client_info": {
+          "package_name": "com.kanyideveloper.kuiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650689937568-7evnf52h5ljda0jv95o6frjcn29qhbcm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8rgUMk9AVh7a_1Cp8tW63gGKEnaNdxTk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650689937568-7evnf52h5ljda0jv95o6frjcn29qhbcm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

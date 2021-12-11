@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPostActivity">
+
+    <EditText
+        android:id="@+id/edtPostTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="textCapWords"
+        android:hint="Post Title..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editPostDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/post_background"
+        android:gravity="top"
+        android:hint="Content..."
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:minLines="5"
+        app:layout_constraintEnd_toEndOf="@+id/edtPostTitle"
+        app:layout_constraintStart_toStartOf="@+id/edtPostTitle"
+        app:layout_constraintTop_toBottomOf="@+id/edtPostTitle" />
+
+    <Button
+        android:id="@+id/buttonPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Post"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/editPostDescription"
+        app:layout_constraintStart_toStartOf="@+id/editPostDescription"
+        app:layout_constraintTop_toBottomOf="@+id/editPostDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>
