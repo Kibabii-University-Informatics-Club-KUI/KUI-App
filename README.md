@@ -13,3 +13,6 @@ Simple Android app during a coding night. Just Learning Firebase and Android
 - Designing UIs
     - Designing Layouts with ConstraintLayout
 - Adding Logic to our App.    
+
+### Demo
+<img src="screenshots/demo1.png" width="250"/> <img src="screenshots/demo2.png" width="250"/> <img src="screenshots/demo3.png" width="250"/> <img src="screenshots/demo5.png" width="250"/> <img src="screenshots/demo6.png" width="250"/>
