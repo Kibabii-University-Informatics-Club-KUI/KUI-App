@@ -1,7 +1,6 @@
 package com.kanyideveloper.kuiapp;
 
 public class User {
-    private String userId;
     private String userName;
     private String email;
     private String phoneNum;
@@ -10,20 +9,11 @@ public class User {
     public User(){
     }
 
-    public User(String userId, String userName, String email, String phoneNum, String regNo) {
-        this.userId = userId;
+    public User(String userName, String email, String phoneNum, String regNo) {
         this.userName = userName;
         this.email = email;
         this.phoneNum = phoneNum;
         this.regNo = regNo;
-    }
-
-    public String getUserId() {
-        return userId;
-    }
-
-    public void setUserId(String userId) {
-        this.userId = userId;
     }
 
     public String getUserName() {

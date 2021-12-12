@@ -72,7 +72,7 @@ public class RegisterActivity extends AppCompatActivity {
                             if (task.isSuccessful()){
 
                                 String userId = firebaseAuth.getCurrentUser().getUid();
-                                User user = new User(userId, username, email, phoneNo, regNo);
+                                User user = new User(username, email, phoneNo, regNo);
                                 databaseReference.child(userId).setValue(user);
 
                                 Toast.makeText(getApplicationContext(), "Account Created Successfully", Toast.LENGTH_SHORT).show();

@@ -65,7 +65,7 @@ public class AddPostActivity extends AppCompatActivity {
     }
 
     private void fetchUserName(){
-        databaseReference.child("users").child(userId).addValueEventListener(new ValueEventListener() {
+        databaseReference.child("users").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()){
